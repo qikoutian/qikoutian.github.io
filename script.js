@@ -44,7 +44,7 @@ function istolethis () {
         context.beginPath();
         //context.fillStyle = "yellow";
         //context.fillRect(bx - bs / 2, by - bs / 2, bs, bs);
-        context.fillStyle="#FFFFFF"
+        context.fillStyle="#FF0000"
         context.arc(bx,by,10,0,Math.PI*2,true);
         context.closePath();
         context.fill();
