@@ -1,13 +1,29 @@
 body {
     background: white; /* try type yellow */
     color: #323232;
-  
-    margin: 0;
-    height: 100vh;
-  
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    font-family: Helvetica neue, roboto;
-  }
+}
+  
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    color: white;
+    margin-top: 5%;
+    line-height: 60px;
+    font-weight: bold;
+    padding: 0 40px;
+    background: red;
+    border: none;
+    border-radius: 25px;
+}
+
+button:hover {
+    background: green;
+}
