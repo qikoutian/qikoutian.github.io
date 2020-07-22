@@ -7,6 +7,7 @@ body {
 }
   
 .container {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,3 +28,9 @@ button {
 button:hover {
     background: green;
 }
+
+p {
+    width: 100px;
+    height: 100px;
+    background-color: azure; 
+} 
