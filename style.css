@@ -1,17 +1,56 @@
 body {
-    background: white; /* try type yellow */
-    color: #323232;
+    background: black; /* try type yellow */
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
   
-.container {
+#parcontainer {
+    width: 500px;
+    height: 750px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+#containerone {
+    width: 500px;
+    height: 650px;
     position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    bottom: 0px;
+}
+
+#containertwo {
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    bottom: 0px;
+    text-align: center;
+    line-height: 100px;
+}
+
+#containerthree {
+    width: 500px;
+    height: 100px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    bottom: 0px;
+    text-align: center;
+    line-height: 100px;
 }
 
 button {
@@ -29,8 +68,17 @@ button:hover {
     background: green;
 }
 
+#myCanvas { 
+    background:black;
+    border:1px solid black; 
+}
+
 p {
-    width: 100px;
+    width: 200px;
     height: 100px;
-    background-color: azure; 
-} 
+    background-color: green; 
+}
+
+.button2 {
+    background-color: #f44336;
+}

@@ -2,20 +2,22 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <script src = "http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-        <script src = "http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
         <title>Whiterose</title>
+        <script src="script.js"></script>
         <link rel="stylesheet" href="style.css"> 
     </head>
     <body>
-        <div class = "container">
-            <script src="script.js"></script>
-        </div>
-        <div id="container">
-            <canvas id="myCanvas" width="400" height="300"></canvas>
-        </div>
-        <div>
-            <p>Ball Number Here</p>
+        <div id="parcontainer">
+            <button onclick="istolethis()">Add Ball</button>
+            <div id="containerone">
+                <canvas id="myCanvas" width="100" height="450"></canvas>
+            </div>
+            <div id="containertwo">
+                <p><a id="numBalls">0</a> Balls</p>
+            </div>
+            <div id="containerthree">
+                <button class="button button2" onClick="quit()">Quit</button>
+            </div>
         </div>
     </body>
 </html>
