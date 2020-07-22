@@ -1,6 +1,6 @@
 body {
-    background: black; /* try type yellow */
-    color: white;
+    background: white; /* try type yellow */
+    color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,7 +42,7 @@ body {
 
 #containerthree {
     width: 500px;
-    height: 100px;
+    height: 300px;
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -54,31 +54,49 @@ body {
 }
 
 button {
-    color: white;
     margin-top: 5%;
     line-height: 60px;
     font-weight: bold;
     padding: 0 40px;
-    background: red;
     border: none;
     border-radius: 25px;
 }
 
-button:hover {
-    background: green;
-}
-
 #myCanvas { 
-    background:black;
-    border:1px solid black; 
-}
-
-p {
-    width: 200px;
-    height: 100px;
-    background-color: green; 
+    background:white;
+    border:1px solid white; 
 }
 
 .button2 {
     background-color: #f44336;
+}
+
+.imgcontainer {
+    color: white;
+    width: 500px;
+    height: 450px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    bottom: 0px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.centeredwin {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+}
+
+.centerednwin {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
 }

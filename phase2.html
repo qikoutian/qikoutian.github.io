@@ -2,23 +2,20 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Phase 1</title>
+        <title>Phase 2</title>
         <script src="script.js"></script>
         <link rel="stylesheet" href="style.css"> 
     </head>
     <body>
         <div id="parcontainer">
-            <button onclick="ballDrop(this)">Add Ball</button>
+            <button onclick="randomWin()">Draw</button>
             <div id="containerone">
-                <canvas id="myCanvas" width="100" height="250"></canvas>
+                <p><a id="win"></a></p>
             </div>
             <div class="imgcontainer">
                 <img src="urn.png" alt="urn" style="width:50%;">
-                <div class="centeredwin"><a id="numBalls">0</a> Winning Balls</div>
+                <div class="centeredwin"><a id="numBalls"></a> Winning Balls</div>
                 <div class="centerednwin">50 Non-Winning Balls</div>
-            </div>
-            <div id="containerthree">
-                <button class="button button2" onClick="quit()">Exit</button>
             </div>
         </div>
     </body>

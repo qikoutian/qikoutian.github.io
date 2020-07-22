@@ -1,24 +1,9 @@
-function myFunction () {
+function ballDrop (obj) {
     counter();
-    var context;
-    var dx= 4;  
-    var dy=4;
-    var y=150;
-    var x=10;
-    function draw(){
-        context= myCanvas.getContext('2d');
-        context.clearRect(0,0,400,400);
-        context.beginPath();
-        context.fillStyle="#FFFFFF";
-        context.arc(x,y,10,0,Math.PI*2,true);
-        context.closePath();
-        context.fill();
-    }
-    setInterval(draw,10); 
-}
-
-function istolethis () {
-    counter();
+    obj.disabled = true;
+    setTimeout(function() {
+        obj.disabled = false;
+    }, 2000);
     const FPS = 165;
     var bs = 30;
     var bx, by;
@@ -38,7 +23,7 @@ function istolethis () {
         bx += xv;
         by += yv;
 
-        context.fillStyle = "black";
+        context.fillStyle = "white";
         context.fillRect(0, 0, canvas.width, canvas.height);
         context.clearRect(0,0,400,400);
         context.beginPath();
@@ -65,6 +50,30 @@ function counter () {
     document.getElementById("numBalls").innerHTML = numBalls;
 }
 
-function quit () {
-    alert("比心！爱你呦~ （不知道这个应该干啥嘿嘿xd）");
+function quit() {
+    var b = document.getElementById('numBalls').innerHTML,
+        url = 'qikoutian.github.io/phase2.html?name=' + encodeURIComponent(b);
+    document.location.href = url;
+}
+
+window.onload = function () {
+    var url = document.location.href,
+        params = url.split('?')[1].split('&'),
+        data = {}, tmp;
+    for (var i = 0, l = params.length; i < l; i++) {
+         tmp = params[i].split('=');
+         data[tmp[0]] = tmp[1];
+    }
+    document.getElementById('numBalls').innerHTML = data.name;
+}
+
+function randomWin () {
+
+    var chance = Math.floor((Math.random() * ( parseInt( document.getElementById('numBalls').innerHTML ) + 50)));
+
+    if( chance < document.getElementById('numBalls').innerHTML ) {
+        document.getElementById('win').innerHTML = "You Won";
+    } else {
+        document.getElementById('win').innerHTML = "You Didn't Win";
+    }
 }
