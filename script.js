@@ -76,4 +76,4 @@ function randomWin () {
     } else {
         document.getElementById('win').innerHTML = "You Didn't Win";
     }
-}
+} //
