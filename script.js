@@ -72,8 +72,8 @@ function randomWin () {
     var chance = Math.floor((Math.random() * ( parseInt( document.getElementById('numBalls').innerHTML ) + 50)));
 
     if( chance < document.getElementById('numBalls').innerHTML ) {
-        document.getElementById('win').innerHTML = "You Won";
+        document.getElementById('win').innerHTML = "You Won. Please add 09 at the end of your study code";
     } else {
-        document.getElementById('win').innerHTML = "You Didn't Win";
+        document.getElementById('win').innerHTML = "Sorry. You Didn't Win.";
     }
 } //
