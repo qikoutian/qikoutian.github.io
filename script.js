@@ -43,7 +43,7 @@ function ballDrop (obj) {
     // }
 }
 
-var numBalls = 0;
+var numBalls = 1;
 
 function counter () {
     numBalls += 1;
