@@ -52,6 +52,12 @@ body {
     text-align: center;
     line-height: 100px;
 }
+.phase {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
 
 button {
     margin-top: 5%;
