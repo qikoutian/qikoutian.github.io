@@ -48,8 +48,6 @@ var numBalls = 1;
 function counter () {
     numBalls += 1;
     document.getElementById("numBalls").innerHTML = numBalls;
-    var addBalls = numBalls - 1;
-    document.getElementById("addBalls").innerHTML = addBalls;
     var pBalls = numBalls / (numBalls + 30);
     pBalls = pBalls.toFixed(2)*100 + "%"
     document.getElementById("pBalls").innerHTML = pBalls;
@@ -78,7 +76,7 @@ function randomWin () {
 
     var chance = Math.floor((Math.random() * ( parseInt( document.getElementById('numBalls').innerHTML ) + 30)));
     if( chance < document.getElementById('numBalls').innerHTML ) {
-        document.getElementById('win').innerHTML = "You Won. You will receive the base payment plus the winning amount as a bonus.";
+        document.getElementById('win').innerHTML = "You Won. You will receive the base payment plus the winning amount as a bonus. Please add 07 at the end of your study code.";
     } else {
         document.getElementById('win').innerHTML = "Sorry. You Didn't Win. But you will still receive the base payment.";
     }
