@@ -84,7 +84,7 @@ button {
 
 .imgcontainer {
     color: white;
-    width: 1050px;
+    width: 1100px;
     height: 450px;
     position: absolute;
     display: flex;
@@ -131,7 +131,7 @@ button {
 .reminder2 {
     position: absolute;
     top: 55%;
-    left: 50%;
+    left: 49%;
     transform: translate(-50%, -50%);
     color: black;
 }
@@ -139,7 +139,7 @@ button {
 .reminder3 {
     position: absolute;
     top: 60%;
-    left: 50%;
+    left: 34%;
     transform: translate(-50%, -50%);
     color: black;
 }
