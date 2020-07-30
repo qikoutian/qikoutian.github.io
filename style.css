@@ -64,7 +64,7 @@ button {
     margin-top: 5%;
     line-height: 60px;
     font-weight: bold;
-    padding: 0 40px;
+    padding: 0 30px;
     border: none;
     border-radius: 25px;
 }
@@ -76,6 +76,10 @@ button {
 
 .button2 {
     background-color: #f5eded;
+    padding: 0 20px;
+    line-height: 30px;
+    margin-left: 70%;
+    margin-top: 10%
 }
 
 .imgcontainer {
@@ -102,7 +106,15 @@ button {
 
 .centerednwin {
     position: absolute;
-    top: 20%;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.chanceOut {
+    position: absolute;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: black;
