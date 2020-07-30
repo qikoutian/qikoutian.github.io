@@ -48,6 +48,8 @@ var numBalls = 1;
 function counter () {
     numBalls += 1;
     document.getElementById("numBalls").innerHTML = numBalls;
+    var addBalls = numBalls - 1;
+    document.getElementById("addBalls").innerHTML = addBalls;
     var pBalls = numBalls / (numBalls + 30);
     pBalls = pBalls.toFixed(2)*100 + "%"
     document.getElementById("pBalls").innerHTML = pBalls;
@@ -74,13 +76,10 @@ window.onload = function () {
 
 function randomWin () {
 
-    var chance = Math.floor((Math.random() * ( parseInt( document.getElementById('numBalls').innerHTML ) + 50)));
+    var chance = Math.floor((Math.random() * ( parseInt( document.getElementById('numBalls').innerHTML ) + 30)));
     if( chance < document.getElementById('numBalls').innerHTML ) {
-        document.getElementById('win').innerHTML = "You Won. You will receive the base payment plus the winning amount as a bonus. \n " + 
-        "Please add 09 at the end of your study code. \n" + 
-        "In order to get paid, you must remember that you added a total of winning balls during the game. We will ask you to recall this number later. If you do not recall it correctly, your data will be deemed invalid.";
+        document.getElementById('win').innerHTML = "You Won. You will receive the base payment plus the winning amount as a bonus.";
     } else {
-        document.getElementById('win').innerHTML = "Sorry. You Didn't Win. But you will still receive the base payment. \n " + 
-        "In order to get paid, you must remember that you added a total of xxx winning balls during the game. We will ask you to recall this number later. If you do not recall it correctly, your data will be deemed invalid.";
+        document.getElementById('win').innerHTML = "Sorry. You Didn't Win. But you will still receive the base payment.";
     }
 } //
