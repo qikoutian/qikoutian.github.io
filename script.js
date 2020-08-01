@@ -1,5 +1,3 @@
-
-
 function fall(obj){
     counter();
     obj.disabled = true;
@@ -25,6 +23,7 @@ function fall(obj){
 
 
 var numBalls = 1;
+numBalls.style.color = "red"; 
 
 function counter () {
     numBalls += 1;
@@ -57,8 +56,8 @@ function randomWin () {
 
     var chance = Math.floor((Math.random() * ( parseInt( document.getElementById('numBalls').innerHTML ) + 30)));
     if( chance < document.getElementById('numBalls').innerHTML ) {
-        document.getElementById('win').innerHTML = "You Won. You will receive the base payment plus the winning amount as a bonus. Please add 07 at the end of your study code.";
+        document.getElementById('win').innerHTML = "You Won. You will receive the base payment plus the winning amount as a bonus. \r In order to get paid, you must remember that there were a total of " + numBalls + " winning balls. We will ask you to recall this number later. If you do not recall it correctly, your data will be deemed invalid. Please add" + numBalls + "at the end of your study code.";
     } else {
-        document.getElementById('win').innerHTML = "Sorry. You Didn't Win. But you will still receive the base payment.";
+        document.getElementById('win').innerHTML = "Sorry. You Didn't Win. But you will still receive the base payment. \r In order to get paid, you must remember that there were a total of " + numBalls + " winning balls. We will ask you to recall this number later. If you do not recall it correctly, your data will be deemed invalid.Please add 07 at the end of your study code.";
     }
 } //
