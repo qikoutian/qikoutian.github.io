@@ -1,5 +1,5 @@
 body {
-    background: white; /* try type yellow */
+    background: white;
     color: black;
     display: flex;
     align-items: center;
@@ -62,7 +62,7 @@ body {
 }
 .phase {
     position: absolute;
-    top: 1%;
+    top: 2%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: black;
@@ -77,10 +77,12 @@ button {
     border-radius: 25px;
 }
 
-#myCanvas { 
-    background:white;
-    border:1px solid white; 
+.liveTrash {
+    visibility: hidden;
+    position: absolute;
+    top: 7%;
 }
+
 
 .button2 {
     background-color: #f5eded;
